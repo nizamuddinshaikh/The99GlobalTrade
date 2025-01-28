@@ -1,0 +1,422 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    height: vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: navy;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.bg {
+    width: 99%;
+    height: 99vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("trade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 99em 46em;
+}
+.slider {
+    width: 100%;
+   
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 99%;
+    animation: slide 30s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* .pnp{
+    margin-left: 450px;
+    
+    
+background-image: url("logo.png");
+width: 80em;
+    height: 75em;
+background-repeat: no-repeat;
+} */
+/* Style for the PNP container */
+.pnp {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("logo2.png");
+    background-size: contain; /* Adjusts size to fit without distortion */
+    background-repeat: no-repeat;
+    width: 40em; /* Customize width */
+    height: 40em; /* Customize height */
+    z-index: 10; /* Keeps the logo on top of the slides */
+}
+.pnp-slogan {
+    position: absolute;
+    top: 425px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(26, 4, 91);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+/* Position Contact Us in front of the logo */
+.contact-us {
+    position: absolute;
+    top: 77%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust alignment */
+    z-index: 1000; /* Ensure it's above the logo */
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #058cf3;
+    border: 2px solid #0a0ef0;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0078D4;
+    color: white;
+}
+
+/* Dropdown options style */
+.contact-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.contact-options a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-options a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-options a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.contact-us:hover .contact-options {
+    display: block;
+}
+
+.new-contact-us {
+    position: absolute;
+    
+    margin-top: 2.50%;
+    margin-left: 131.5%;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.new-contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #f1f3f5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* .new-contact-button:hover {
+    background-color: #0078D4;
+    color: white;
+} */
+
+.new-contact-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.new-contact-options a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.new-contact-options a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.new-contact-options a:hover {
+    background-color: #f1f1f1;
+}
+
+.new-contact-us:hover .new-contact-options {
+    display: block;
+}
+
+
+
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.item-back{
+    background-color: #fe8205;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-card {
+    width: calc(33.333% - 15px);
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+}
+
+.item-photo {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.item-details {
+    padding: 15px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.item-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.h1siz{
+    margin-left: 45%;
+    font-weight: bold;
+}
+
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 65px;
+    height: 65px;
+}
+
+
+.whatsapp-button {
+
+    background-color: #f3f5f4;
+}
+
+.email-button {
+    background-color: #0078D4;
+}
+
+.chat-button img {
+    width: 46px;
+    height: 46px;
+}
+
+.chatbox-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+}
+
+.chatbox-options.active {
+    display: flex;
+}
+
+.h2fix{
+    margin-left: 80%;
+}
+
+.contact-form {
+    background: #fff;
+    margin-left: 72%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5ab4bd;
+    outline: none;
+}
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5ab4bd;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #469ca3;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+

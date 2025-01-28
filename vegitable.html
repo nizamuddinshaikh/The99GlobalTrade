@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item Card Example</title>
+    <style>
+        .item-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next row */
+            justify-content: space-around; /* Distribute items evenly */
+            padding: 20px;
+        }
+
+        .item-card {
+            width: calc(28% - 20px); /* Four items per row with margin */
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden; /* Hide image overflow */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+        .item-card:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .item-photo {
+            width: 100%;
+            height: 250px; /* Fixed height for consistent look */
+            object-fit: cover;
+            display: block; /* Prevents a small space below the image */
+        }
+
+        .item-details {
+            padding: 15px;
+            text-align: center; /* Center text within details */
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: #333; /* Darker text for better contrast */
+        }
+
+        .item-description {
+            color: #666; /* Slightly lighter text for description */
+            font-size: 0.9em;
+        }
+        @media (max-width: 900px) { /* Adjust for smaller screens */
+            .item-card {
+                width: calc(50% - 20px); /* Two items per row on medium screens */
+            }
+        }
+        @media (max-width: 600px) {
+            .item-card{
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="item-container">
+    <div class="item-card">
+        <img src="tomato.png" alt="doubleegg" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">TOMATO</div>
+            <div class="item-description">Rich in taste and nutrition.</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="chili.jpeg" alt="edge" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">CHILI</div>
+            <div class="item-description">Delicate white fish.</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="ginger.png" alt="ginger" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">GINGER</div>
+            <div class="item-description">High in Omega-3s.</div>
+        </div>
+    </div>
+    
+    <div class="item-card">
+        <img src="Onion.jpg" alt="onion" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Onions</div>
+            <div class="item-description">These may include reducing the risk of several types of cancer, improving mood, and maintaining skin and hair health HS CODE-7031001</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="chillonion.jpg" alt="chillonion" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Onions, Fresh/Chilled</div>
+            <div class="item-description">Chilled Onions HS CODE-7031010</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="roseonion.jpg" alt="roseonion" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Rose Onions Fresh of Chilled</div>
+            <div class="item-description">Chilled Rose Onions HS CODE-7031011</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="roseonion.jpg" alt="roseonion" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Rose Onions Fresh of Chilled</div>
+            <div class="item-description">Chilled Rose Onions HS CODE-7031011</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="garlic.jpg" alt="garlic" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Garlic Fresh and Dry</div>
+            <div class="item-description">Garlic HS CODE-7032000</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="greenchili.jpg" alt="greenchili" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Green Chili</div>
+            <div class="item-description">Green Chili HS CODE-7096001</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="potatoseed.jpg" alt="greenchili" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Potato Seeds</div>
+            <div class="item-description">Potato Seeds, Fresh/Chilled HS CODE-7011000</div>
+        </div>
+    </div>
+    <div class="item-card">
+        <img src="potatothanseed.jpg" alt="potatothanseed" class="item-photo">
+        <div class="item-details">
+            <div class="item-name">Potato Than Seeds</div>
+            <div class="item-description">Potatoes Other Than Seed, Fresh/Chilled HS CODE-7019000</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
