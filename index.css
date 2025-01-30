@@ -420,13 +420,44 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 900px) { /* Adjust for smaller screens */
-    .item-card {
-        width: calc(50% - 20px); /* Two items per row on medium screens */
-    }
-}
-@media (max-width: 600px) {
-    .item-card{
-        width: calc(100% - 20px);
-    }
-}
+  @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #333;
+                flex-direction: column;
+                padding: 20px 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .dashboard {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .contact-form {
+                margin: 20px 10px;
+            }
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-25%); }
+            50% { transform: translateX(-50%); }
+            75% { transform: translateX(-75%); }
+            100% { transform: translateX(0); }
+        }
