@@ -431,3 +431,183 @@ footer {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .pnp {
+        width: 30em;
+        height: 30em;
+    }
+
+    .pnp-slogan {
+        top: 350px;
+        font-size: 18px;
+    }
+
+    .item-card {
+        width: calc(50% - 15px);
+    }
+
+    .contact-form {
+        margin-left: 60%;
+        max-width: 350px;
+    }
+}
+
+/* Media Queries for tablet portrait */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .pnp {
+        width: 20em;
+        height: 20em;
+    }
+
+    .pnp-slogan {
+        top: 250px;
+        font-size: 16px;
+    }
+
+    .bg {
+        background-size: cover;
+    }
+
+    .contact-form {
+        margin-left: 50%;
+        max-width: 300px;
+    }
+
+    .h1siz {
+        margin-left: 35%;
+    }
+
+    .h2fix {
+        margin-left: 70%;
+    }
+
+    .item-photo {
+        height: 200px;
+    }
+}
+
+/* Media Queries for mobile devices */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .pnp {
+        width: 15em;
+        height: 15em;
+    }
+
+    .pnp-slogan {
+        top: 200px;
+        font-size: 14px;
+    }
+
+    .item-card {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .h1siz {
+        margin-left: 25%;
+    }
+
+    .h2fix {
+        margin-left: 60%;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .new-contact-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .chatbox-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .chat-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-button img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slides {
+        height: 70vh;
+    }
+
+    .slide img {
+        height: 70vh;
+    }
+}
+
+/* Media Query for very small devices */
+@media screen and (max-width: 320px) {
+    .pnp {
+        width: 12em;
+        height: 12em;
+    }
+
+    .pnp-slogan {
+        top: 180px;
+        font-size: 12px;
+    }
+
+    .contact-options a,
+    .new-contact-options a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .item-photo {
+        height: 160px;
+    }
+}
+
+/* Media Query for landscape orientation on mobile */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .slides {
+        height: 100vh;
+    }
+
+    .slide img {
+        height: 100vh;
+    }
+
+    .pnp {
+        top: 50%;
+        width: 15em;
+        height: 15em;
+    }
+
+    .pnp-slogan {
+        top: 160px;
+    }
+}
